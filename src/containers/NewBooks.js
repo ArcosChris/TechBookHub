@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import BookCard from "../components/BookCard";
 import BookCarousel from "./BookCarousel";
+import '../assets/css/NewBook.css'
 
 const NewBooks = () => {
     const [newBooks, setNewBooks] = useState([]);
@@ -35,11 +36,11 @@ const NewBooks = () => {
     }, [newBooks]);
     return (
         <div className="container is-fluid my-3">
-            <div className="notification is-primary mb-2">
-                <h1>New Releases</h1>
+            <div className="new-release-header notification mb-2">
+                <h1>Top New Releases</h1>
             </div>
-            <BookCarousel />
-            <div className="book-container is-secondary">
+            <BookCarousel books={newBooks} />
+            {/* <div className="book-container is-secondary has-centered-text">
                 <div className="columns is-mobile is-multiline my-2">
                     {newBooks && newBooks.map((book) => {
                         return (
@@ -47,7 +48,7 @@ const NewBooks = () => {
                         )
                     })}
                 </div>
-            </div>
+            </div> */}
         </div>
 
 

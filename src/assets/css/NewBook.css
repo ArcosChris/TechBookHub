@@ -1,0 +1,11 @@
+.new-release-header{
+    background: cadetblue;
+    text-align: center;
+    padding: .85rem 2.5rem!important;
+}
+
+.new-release-header h1{
+    color: #fff;
+    display: inline-block;
+    font-size: 1.5rem!important;
+}

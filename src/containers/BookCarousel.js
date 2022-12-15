@@ -2,8 +2,9 @@ import { useEffect } from "react";
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import '../assets/css/BookCarousel.css';
+import BookCard from "../components/BookCard";
 
-const BookCarousel = () => {
+const BookCarousel = ({ books }) => {
     const responsive = {
         superLargeDesktop: {
             breakpoint: { max: 4000, min: 3000 },
@@ -25,7 +26,7 @@ const BookCarousel = () => {
 
 
     return (
-        <div className="container">
+        <div className="container my-3">
             <Carousel
                 additionalTransfrom={0}
                 arrows
@@ -48,54 +49,12 @@ const BookCarousel = () => {
                 responsive={responsive}
                 swipeable
             >
-                <div className="has-text-centered">
-                    <img src="https://itbook.store/img/books/9781098103521.png" />
-                    <button className="button is-primary is-outlined">Details</button>
-                </div>
-                <div className="has-text-centered">
-                    <img src="https://itbook.store/img/books/9781098103521.png" />
-                    <button className="button is-primary is-outlined">Details</button>
-                </div>
-                <div className="has-text-centered">
-                    <img src="https://itbook.store/img/books/9781098103521.png" />
-                    <button className="button is-primary is-outlined">Details</button>
-                </div>
-                <div className="has-text-centered">
-                    <img src="https://itbook.store/img/books/9781098103521.png" />
-                    <button className="button is-primary is-outlined">Details</button>
-                </div>
-                <div className="has-text-centered">
-                    <img src="https://itbook.store/img/books/9781098103521.png" />
-                    <button className="button is-primary is-outlined">Details</button>
-                </div>
-                <div className="has-text-centered">
-                    <img src="https://itbook.store/img/books/9781098103521.png" />
-                    <button className="button is-primary is-outlined">Details</button>
-                </div>
-                <div className="has-text-centered">
-                    <img src="https://itbook.store/img/books/9781098103521.png" />
-                    <button className="button is-primary is-outlined">Details</button>
-                </div>
-                <div className="has-text-centered">
-                    <img src="https://itbook.store/img/books/9781098103521.png" />
-                    <button className="button is-primary is-outlined">Details</button>
-                </div>
-                <div className="has-text-centered">
-                    <img src="https://itbook.store/img/books/9781098103521.png" />
-                    <button className="button is-primary is-outlined">Details</button>
-                </div>
-                <div className="has-text-centered">
-                    <img src="https://itbook.store/img/books/9781098103521.png" />
-                    <button className="button is-primary is-outlined">Details</button>
-                </div>
-                <div className="has-text-centered">
-                    <img src="https://itbook.store/img/books/9781098103521.png" />
-                    <button className="button is-primary is-outlined">Details</button>
-                </div>
-                <div className="has-text-centered">
-                    <img src="https://itbook.store/img/books/9781098103521.png" />
-                    <button className="button is-primary is-outlined">Details</button>
-                </div>
+                {books && books.map((book) => {
+                    return (
+                        <BookCard key={book.isbn13} data={book} />
+                    )
+                })}
+
             </Carousel>
         </div>
     )
