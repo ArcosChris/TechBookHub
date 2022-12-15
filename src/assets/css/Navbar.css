@@ -1,0 +1,34 @@
+.mainLogo{
+    font-size: 2.5rem;
+    color:cadetblue;
+}
+
+.mainTitle{
+    font-size: 1.5rem;
+    margin-left: 15px!important;
+}
+
+.navbar-burger span{
+    width:20px!important;
+    height: 2px!important;
+
+}
+
+@media(max-width:1024px){
+    .mainInput{
+        width:80%!important;
+    }
+    .input-parent{
+        text-align: center;
+        width: 100%;
+    }
+    .navbar-brand{
+        justify-content: space-between!important;
+    }
+}
+
+@media(min-width:1024px){
+    .mainInput{
+        width: 600px!important;
+    }
+}
