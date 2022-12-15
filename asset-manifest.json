@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/TechBookHub/static/css/main.63b78f4d.css",
-    "main.js": "/TechBookHub/static/js/main.470cd766.js",
+    "main.css": "/TechBookHub/static/css/main.b9870ff7.css",
+    "main.js": "/TechBookHub/static/js/main.7fefdf18.js",
     "static/media/revicons.eot": "/TechBookHub/static/media/revicons.a77de540a38981833f9e.eot",
     "static/media/revicons.ttf": "/TechBookHub/static/media/revicons.57fd05d4ae650374c8de.ttf",
     "static/media/revicons.woff": "/TechBookHub/static/media/revicons.e8746a624ed098489406.woff",
     "index.html": "/TechBookHub/index.html",
-    "main.63b78f4d.css.map": "/TechBookHub/static/css/main.63b78f4d.css.map",
-    "main.470cd766.js.map": "/TechBookHub/static/js/main.470cd766.js.map"
+    "main.b9870ff7.css.map": "/TechBookHub/static/css/main.b9870ff7.css.map",
+    "main.7fefdf18.js.map": "/TechBookHub/static/js/main.7fefdf18.js.map"
   },
   "entrypoints": [
-    "static/css/main.63b78f4d.css",
-    "static/js/main.470cd766.js"
+    "static/css/main.b9870ff7.css",
+    "static/js/main.7fefdf18.js"
   ]
 }
