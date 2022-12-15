@@ -32,3 +32,9 @@
         width: 600px!important;
     }
 }
+
+@media(min-width: 800px){
+    .mainTitle{
+        font-size: 2rem!important;
+    }
+}

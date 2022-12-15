@@ -9,3 +9,11 @@
     display: inline-block;
     font-size: 1.5rem!important;
 }
+
+@media (min-width: 800px){
+    .new-release-header h1{
+        font-size: 2rem!important;
+    }
+}
+
+

@@ -6,12 +6,6 @@
     left: 0!important;
 }
 
-.book-carousel-card{
-    box-shadow: 2px 8px 15px #dad7d7, 2px 8px 15px #dad7d7;
-    border-radius: 10px;
-}
-
-
 @media(max-width: 650px){
     .react-multiple-carousel__arrow--right, .react-multiple-carousel__arrow--left{
         display: none;

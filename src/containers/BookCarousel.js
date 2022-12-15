@@ -15,48 +15,48 @@ const BookCarousel = ({ books }) => {
             items: 5,
         },
         tablet: {
-            breakpoint: { max: 1024, min: 464 },
+            breakpoint: { max: 1024, min: 500 },
             items: 3,
         },
         mobile: {
-            breakpoint: { max: 464, min: 0 },
+            breakpoint: { max: 500, min: 0 },
             items: 2,
         },
     };
 
+    let playSpeed = (Math.random() * (5000 - 3000) + 3000);
+
 
     return (
-        <div className="container my-3">
-            <Carousel
-                additionalTransfrom={0}
-                arrows
-                autoPlay
-                autoPlaySpeed={3000}
-                centerMode={false}
-                draggable
-                focusOnSelect={false}
-                infinite
-                itemClass=""
-                keyBoardControl
-                minimumTouchDrag={80}
-                pauseOnHover
-                renderArrowsWhenDisabled={false}
-                renderButtonGroupOutside={false}
-                renderDotsOutside={false}
-                rewind={false}
-                rewindWithAnimation={false}
-                slidesToSlide={1}
-                responsive={responsive}
-                swipeable
-            >
-                {books && books.map((book) => {
-                    return (
-                        <BookCard key={book.isbn13} data={book} />
-                    )
-                })}
+        <Carousel
+            additionalTransfrom={0}
+            arrows
+            autoPlay
+            autoPlaySpeed={playSpeed}
+            centerMode={false}
+            draggable
+            focusOnSelect={false}
+            infinite
+            itemClass=""
+            keyBoardControl
+            minimumTouchDrag={80}
+            pauseOnHover
+            renderArrowsWhenDisabled={false}
+            renderButtonGroupOutside={false}
+            renderDotsOutside={false}
+            rewind={false}
+            rewindWithAnimation={false}
+            slidesToSlide={1}
+            responsive={responsive}
+            swipeable
+        >
+            {books && books.map((book) => {
+                return (
+                    <BookCard key={book.isbn13} data={book} />
+                )
+            })}
 
-            </Carousel>
-        </div>
+        </Carousel>
     )
 
 

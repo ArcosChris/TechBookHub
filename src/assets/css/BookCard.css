@@ -1,8 +1,4 @@
-.image img {
-    width: auto;
-    height: auto;
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: cover;
+.book-carousel-card{
+    box-shadow: 2px 8px 15px #dad7d7, 2px 8px 15px #dad7d7;
+    border-radius: 10px;
 }
-
