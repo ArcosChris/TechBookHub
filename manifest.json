@@ -1,0 +1,9 @@
+{
+  "short_name": "IT BOOK APP",
+  "name": "TECH BOOK HOUSE",
+  "icons": [],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
